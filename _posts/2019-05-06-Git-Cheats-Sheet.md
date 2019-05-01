@@ -2,10 +2,10 @@
 
 Первоначальная настройка Git
 Указать имя и email. Это важно, потому что каждый коммит в Git’е содержит эту информацию, и она включена в коммиты, передаваемые вами, и не может быть далее изменена:
-'''
+```
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
-'''
+```
 Выбрать редактор:
 
 $ git config --global core.editor vim
