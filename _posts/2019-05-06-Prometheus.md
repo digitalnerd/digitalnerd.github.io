@@ -8,8 +8,8 @@ Prometheus + Alertmanager + Grafana + InfluxDB
 $ sudo -i
 # mkdir -p /usr/lib/prometheus \
            /docker/{prometheus,alertmanager,grafana,influxdb}/config
-# cd /usr/lib/prometheus</pre>
-<pre># cat << EOF > docker-compose.yml
+# cd /usr/lib/prometheus
+# cat << EOF > docker-compose.yml
 version: "3"
 
 volumes:
