@@ -80,6 +80,7 @@ EOF
 ```
 Запускаем стек мониторинга и проверяем статус контейнеров:
 
-```bash$ sudo docker-compose up -d 
+```bash
+$ sudo docker-compose up -d 
 $ sudo docker-compose ps
 ```
