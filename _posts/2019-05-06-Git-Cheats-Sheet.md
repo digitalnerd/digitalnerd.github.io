@@ -12,8 +12,9 @@ $ git config --global user.email johndoe@example.com
 ```
 
 Выбрать редактор:
-
-```$ git config --global core.editor vim```
+```
+$ git config --global core.editor vim
+```
 
 vimdiff:
 ```
