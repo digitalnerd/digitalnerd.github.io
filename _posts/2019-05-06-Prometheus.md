@@ -4,6 +4,10 @@ title: Prometheus
 ---
 Prometheus + Alertmanager + Grafana + InfluxDB
 
+```bash
+it is test
+```
+
 ```
 $ sudo -i
 # mkdir -p /usr/lib/prometheus \
@@ -23,7 +27,6 @@ volumes:
     external: true
 
 services:
- 
   prometheus:
     image: prom/prometheus
     container_name: prometheus
