@@ -23,3 +23,7 @@ $ sudo docker ps -q -f status=exited | xargs --no-run-if-empty docker rm
 ```
 $ sudo docker images -q -f dangling=true | xargs --no-run-if-empty docker rmi
 ```
+### How to solve the issue that a Terminal screen is messed up? (usually after a resizing)
+```
+$ sudo docker exec -it -e COLUMNS=$COLUMNS -e LINES=$LINES -e TERM=$TERM CONTAINER bash
+```
