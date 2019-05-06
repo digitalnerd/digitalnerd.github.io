@@ -6,12 +6,13 @@
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
+
 Выбрать редактор:
 
-$ git config --global core.editor vim
-vimdiff:
+`$ git config --global core.editor vim`
 
-$ git config --global merge.tool vimdiff
+vimdiff:
+`$ git config --global merge.tool vimdiff`
 Git умеет делать слияния при помощи kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge и opendiff, но вы можете настроить и другую утилиту.
 
 Проверим настройки:
