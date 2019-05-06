@@ -8,13 +8,7 @@ Prometheus + Alertmanager + Grafana + InfluxDB
 it is test
 ```
 
-``
-it is test
-``
-
-`
-it is test
-`
+<pre>test</pre>
 
 ```
 $ sudo -i
