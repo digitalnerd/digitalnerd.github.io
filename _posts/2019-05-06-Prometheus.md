@@ -4,7 +4,8 @@ title: Prometheus
 ---
 Prometheus + Alertmanager + Grafana + InfluxDB
 
-<pre>$ sudo -i
+```bash
+$ sudo -i
 # mkdir -p /usr/lib/prometheus \
            /docker/{prometheus,alertmanager,grafana,influxdb}/config
 # cd /usr/lib/prometheus</pre>
@@ -75,8 +76,10 @@ services:
      volumes:
        - influxdb:/var/lib/influxdb
      restart: unless-stopped
-EOF</pre>
+EOF
+```
 Запускаем стек мониторинга и проверяем статус контейнеров:
 
-<pre>$ sudo docker-compose up -d 
-$ sudo docker-compose ps</pre>
+```bash$ sudo docker-compose up -d 
+$ sudo docker-compose ps
+```
