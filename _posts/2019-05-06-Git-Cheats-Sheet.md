@@ -9,15 +9,17 @@ $ git config --global user.email johndoe@example.com
 
 Выбрать редактор:
 
-`$ git config --global core.editor vim`
+```$ git config --global core.editor vim```
 
 vimdiff:
-`$ git config --global merge.tool vimdiff`
+```$ git config --global merge.tool vimdiff```
 Git умеет делать слияния при помощи kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge и opendiff, но вы можете настроить и другую утилиту.
 
 Проверим настройки:
 
+```
 $ git config --list
+```
 Три состояния
 В Git’е файлы могут находиться в одном из трёх состояний:
 
@@ -33,51 +35,77 @@ $ git config --list
 Пример 1. Добавить изменение
 Клонируем git репозиторий:
 
+```
 $ git clone ...
+```
 Смотрим на какой ветке находимся (скорее всего это будет «master» или «develop»):
 
+```
 $ git branch
+```
 Создаем новую ветку для изменения и переходим в нее:
 
+```
 $ git checkout -b new_branch
+```
 Какая то работа с файлами …
 Проверяем статус:
-
+```
 $ git status
+```
 Добавляем измененный файлы в локальный репозиторий:
-
+```
 $ git add .
+```
 Дулаем коммит:
-
+```
 $ git commit -m "first commit"
+```
 Пуш:
-
+```
 $ git push origin
+```
 Получаем ошибку, т.к. ветки «new_branch» не существует на github. В сообщении будет написано, какую команду нужно использовать.
 
+```
 $ git push --set-upstream origin new_branch
+```
 Compare & Pull Request -> Delete «new_branch»
 
 Проверяем на какой ветке сейчас находимся:
 
+```
 $ git branch
+```
 Переходим на ветку «master»:
 
+```
 $ git checkout master
+```
 Удаляем ветку:
 
+```
 $ git branch -d new_branch
+```
 Удалить ветку из github:
 
+```
 $ git push origin --delete new_branch
+```
 Пример 2. Отмена коммитов
 Мы изменили файлы, добавили их в локальный репозиторий и сделали коммит:
 
+```
 $ git add .
 $ git commit -m "added few files"
+```
 Выполним коммит, который удаляет изменения:
 
+```
 $ git revert HEAD
+```
 Проверяем log:
 
+```
 $ git hist
+```
