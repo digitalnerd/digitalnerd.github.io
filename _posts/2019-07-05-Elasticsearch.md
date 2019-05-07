@@ -2,7 +2,7 @@
 layout: post
 title: Elasticsearch
 ---
-https://docs.google.com/document/d/1ddJfydl9N93XNfVSZYjRqwv_yI3ljkeuExkbhKIUrbI
+[My Elasticsearch docs](https://docs.google.com/document/d/1ddJfydl9N93XNfVSZYjRqwv_yI3ljkeuExkbhKIUrbI)
 ### Почему выбирают Elasticsearch?
 * высокая производительность индексов
 * легко масштабируется
@@ -29,5 +29,5 @@ curl -XGET http://localhost:9200/blog/_mapping?pretty
 Что такое индекс?
 Это некая группировка логических данных.
 
-Что такое документ?
-Под документом понимаем какую-то единицу данных.
+__Что такое документ?__  
+Под документом понимаем какую-то единицу данных.  
