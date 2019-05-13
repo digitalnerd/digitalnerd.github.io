@@ -2,6 +2,9 @@
 layout: post
 title: Install Node.js
 ---
+https://tecadmin.net/install-latest-nodejs-and-npm-on-centos/
+https://tecadmin.net/install-yarn-centos/
+
 ## Install Node.js to CentOS 7
 ```bash
 $ sudo yum install -y gcc-c++ make
