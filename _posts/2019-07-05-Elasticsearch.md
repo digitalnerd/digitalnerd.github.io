@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Elasticsearch
+title: Elasticsearch - общая информация
+published: true
 ---
 [My Elasticsearch docs](https://docs.google.com/document/d/1ddJfydl9N93XNfVSZYjRqwv_yI3ljkeuExkbhKIUrbI)
 ### Почему выбирают Elasticsearch?
@@ -30,4 +31,4 @@ __Что такое индекс?__
 Это некая группировка логических данных.  
 
 __Что такое документ?__  
-Под документом понимаем какую-то единицу данных.  
+Под документом понимаем какую-то единицу данных.
